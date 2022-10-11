@@ -1,0 +1,13 @@
+vim pod-definition1.yml
+---
+apiVersion: v1
+kind: Pod
+metadata:
+ name: nginx-pod
+ labels:
+ author: sunil
+ type: reverse-proxy
+spec:
+ containers:
+ - name: appserver
+ image: nginx
